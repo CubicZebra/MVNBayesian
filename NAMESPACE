@@ -1,0 +1,8 @@
+exportPattern("^[[:alpha:]]+")
+
+importFrom("stats", "kmeans", "rmultinom", "rnorm", "var")
+importFrom("utils", "tail")
+importFrom("mvtnorm", "rmvnorm")
+importFrom("plyr", "count")
+
+export(Ascending_Num, MatrixAlternative, MixMVN_BayesianPosterior, MixMVN_GibbsSampler, MixMVN_MCMC, MVN_BayesianIterator, MVN_BayesianPosterior, MVN_GibbsSampler, MVN_FConditional, MVN_MCMC)
