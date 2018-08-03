@@ -26,10 +26,11 @@ The DESCRIPTION file:
 Maintainer: \packageMaintainer{MVNBayesian}
 }
 \references{
-《Statistical Inference》 by George Casella. Roger L. Berger;\cr
-《Statistical Decision Theory and Bayesian Analysis》 by James O. Berger;\cr
-《Matrix Computation》 by Gee H. Golub. Charles F. Van Loan;\cr
-《Bayesian Statistics》 by WEI Laisheng; 《Machine Learning》 by NAKAGAWA Hiroshi.
+"Statistical Inference" by George Casella. Roger L. Berger;\cr
+"Statistical Decision Theory and Bayesian Analysis" by James O. Berger;\cr
+"Matrix Computation" by Gee H. Golub. Charles F. Van Loan;\cr
+"Bayesian Statistics" by WEI Laisheng;\cr 
+"Machine Learning" by NAKAGAWA Hiroshi.
 }
 \keyword{ package }
 \seealso{
