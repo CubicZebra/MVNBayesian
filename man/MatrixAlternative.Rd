@@ -34,3 +34,4 @@ M <- matrix(1:9,3,3,1)
 M
 MatrixAlternative(M, 2)
 }
+\keyword{ Interchanging columns and rows }

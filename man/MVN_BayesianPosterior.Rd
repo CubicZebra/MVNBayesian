@@ -56,4 +56,5 @@ K <- cbind(dataset1, dataset1[,3]*(-2)+3)
 eigen(var(K[,2:4]))$values
 rcond(var(K[,2:4]))
 }
-
+\keyword{ Bayesian posterior distribution }
+\keyword{ multivariate normal distribution }

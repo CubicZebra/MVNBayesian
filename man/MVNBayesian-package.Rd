@@ -29,7 +29,7 @@ Maintainer: \packageMaintainer{MVNBayesian}
 "Statistical Inference" by George Casella. Roger L. Berger;\cr
 "Statistical Decision Theory and Bayesian Analysis" by James O. Berger;\cr
 "Matrix Computation" by Gee H. Golub. Charles F. Van Loan;\cr
-"Bayesian Statistics" by WEI Laisheng;\cr 
+"Bayesian Statistics" by WEI Laisheng;\cr
 "Machine Learning" by NAKAGAWA Hiroshi.
 }
 \keyword{ package }
@@ -57,3 +57,8 @@ colrange(BP_Gibbs)
 result <- MVN_MCMC(BP, 5000, c(1), c(77.03))
 result$Accept
 }
+\keyword{ Bayesian posterior distribution }
+\keyword{ multivariate normal distribution }
+\keyword{ multivariate normal mixture distribution }
+\keyword{ Gibbs sampling }
+\keyword{ MCMC }
