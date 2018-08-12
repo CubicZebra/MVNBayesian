@@ -1,10 +1,15 @@
 Package: MVNBayesian
 Type: Package
-Title: Bayesian framework for multivariate normal distribution and multivariate normal mixture distribution
+Title:
+  Bayesian Analysis Framework for MVN (Mixture) Distribution
 Version: 0.0.8-11
 Author: ZHANG Chen
 Maintainer: ZHANG Chen <447974102@qq.com>
-Description: Tools can: a) Compute for Bayesian posterior and b) simulate for specified join probability using MCMC methods, for the data obeying multivariate normal distribution or multivariate normal mixture distribution.
+Description: Tools of Bayesian analysis framework using the method
+  suggested by Berger (1985) <doi:10.1007/978-1-4757-4286-2> for
+  a) calculating BP of MVN and (mixture) distribution;
+  b) generating random vectors of MVN (mixture) distribution;
+  c) MCMC simulation for MVN (mixture) distribution.
 Imports:
   mvtnorm, plyr, stats
 Suggests:
@@ -13,3 +18,4 @@ License: GPL-2
 URL: https://github.com/CubicZebra/MVNBayesian
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 6.1.0
