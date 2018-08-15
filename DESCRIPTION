@@ -7,9 +7,11 @@ Author: ZHANG Chen
 Maintainer: ZHANG Chen <447974102@qq.com>
 Description: Tools of Bayesian analysis framework using the method
   suggested by Berger (1985) <doi:10.1007/978-1-4757-4286-2> for
-  a) calculating BP of MVN and (mixture) distribution;
-  b) generating random vectors of MVN (mixture) distribution;
-  c) MCMC simulation for MVN (mixture) distribution.
+  multivariate normal (MVN) distribution and multivariate normal
+  mixture (MixMVN) distribution:
+  a) calculating Bayesian posteriori of (Mix)MVN distribution;
+  b) generating random vectors of (Mix)MVN distribution;
+  c) Markov chain Monte Carlo (MCMC) for (Mix)MVN distribution.
 Imports:
   mvtnorm, plyr, stats
 Suggests:
