@@ -9,16 +9,16 @@
 \packageDescription{MVNBayesian}
 }
 \details{
-
-The DESCRIPTION file:
-\packageDESCRIPTION{MVNBayesian}
-\packageIndices{MVNBayesian}\cr
-\strong{*Common steps for Bayesian analysis:}\cr
-\cr
-1) Preprocess your data into a design matrix (a data.frame or a matrix-like data) and diagnose it;\cr
-2) Use (Mix)MVN_BayesianPosterior export concerned parameters;\cr
-3) (Mix)MVN_GibbsSampler to generate random vectors based on parameters exported from previous step, determine the range of values for each parameter (proper visualization is recommanded);\cr
-4) Use (Mix)MVN_MCMC to customize conditions for further analysis.\cr
+This package is aimed to build a easy approach for MVN (mixture) distribution in Bayesian analysis framework. Bayesian posteriori MVN (mixture) distribution can be calculated in conditions of given priori MVN (mixture) informations. The conjugated property of MVN distribution makes it effective in parameter estimation using Bayesian iterator. Joint and marginal probability densities of a certain MVN (mixture) can be achieved through random vector generator, using Gibbs sampling. Conditional probability densities from a certain MVN (mixture) can be simulated using MCMC method.
+%%The DESCRIPTION file:
+%%\packageDESCRIPTION{MVNBayesian}
+%%\packageIndices{MVNBayesian}
+%%\strong{*Common steps for Bayesian analysis:}\cr
+%%\cr
+%%1) Preprocess your data into a design matrix (a data.frame or a matrix-like data) and diagnose it;\cr
+%%2) Use (Mix)MVN_BayesianPosteriori export concerned parameters;\cr
+%%3) (Mix)MVN_GibbsSampler to generate random vectors based on parameters exported from previous step, determine the range of values for each parameter (proper visualization is recommanded);\cr
+%%4) Use (Mix)MVN_MCMC to customize conditions for further analysis.\cr
 }
 \author{
 \packageAuthor{MVNBayesian}
@@ -34,31 +34,27 @@ Maintainer: \packageMaintainer{MVNBayesian}
 }
 \keyword{ package }
 \seealso{
-\code{\link{stats}}, \code{\link[mvtnorm:Mvnorm]{mvtnorm}}
+\code{\link[stats:stats-package]{stats}}, \code{\link[mvtnorm:Mvnorm]{mvtnorm}}
 }
 \examples{
 library(Rfast)
 library(mvtnorm)
 library(plyr)
 
-# step.1
 head(dataset1)
 
-# step.2
-BP <- MVN_BayesianPosterior(dataset1)
+BP <- MVN_BayesianPosteriori(dataset1)
 BP
 
-# step.3
 BP_Gibbs <- MVN_GibbsSampler(5000, BP)
 colMeans(BP_Gibbs)
 colrange(BP_Gibbs)
 
-# step.4
 result <- MVN_MCMC(BP, 5000, c(1), c(77.03))
 result$Accept
 }
-\keyword{ Bayesian posterior distribution }
-\keyword{ multivariate normal distribution }
-\keyword{ multivariate normal mixture distribution }
-\keyword{ Gibbs sampling }
-\keyword{ MCMC }
+\keyword{Bayesian posteriori}
+\keyword{MVN distribution}
+\keyword{MVN mixture distribution}
+\keyword{Gibbs sampling}
+\keyword{MCMC}

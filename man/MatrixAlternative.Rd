@@ -1,10 +1,10 @@
 \name{MatrixAlternative}
 \alias{MatrixAlternative}
 \title{
-  MatrixAlternative
+  Interchanging specified rows and columns
 }
 \description{
-  exchange all elements between two specified dimensions of a square matrix.
+  Interchange all elements between two specified rows and columns in a matrix.
 }
 \usage{
 # A matrix-like data
@@ -12,20 +12,17 @@ MatrixAlternative(data, sub, rep)
 }
 \arguments{
   \item{data}{
-     a square matrix
+     A matrix to be processed.
 }
   \item{sub}{
-     first selected dimension.
+     A positive integer. The first selected dimension.
 }
   \item{rep}{
-     second selected dimension, the default value is 1.
+     A positive integer. The second selected dimension. Default value is 1.
 }
 }
 \value{
-return a matrix with rows and columns in two customized dimensions exchanged
-}
-\author{
-  ZHANG Chen
+  return a matrix with interchanged rows and columns in two specified dimensions.
 }
 \examples{
 library(plyr)
@@ -34,4 +31,4 @@ M <- matrix(1:9,3,3,1)
 M
 MatrixAlternative(M, 2)
 }
-\keyword{ Interchanging columns and rows }
+\keyword{Matrix preprocessing}

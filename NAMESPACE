@@ -5,4 +5,4 @@ importFrom("utils", "tail")
 importFrom("mvtnorm", "rmvnorm")
 importFrom("plyr", "count")
 
-export(Ascending_Num, MatrixAlternative, MixMVN_BayesianPosterior, MixMVN_GibbsSampler, MixMVN_MCMC, MVN_BayesianIterator, MVN_BayesianPosterior, MVN_GibbsSampler, MVN_FConditional, MVN_MCMC)
+export(MixMVN_BayesianPosteriori, MixMVN_GibbsSampler, MixMVN_MCMC, MVN_BayesianIterator, MVN_BayesianPosteriori, MVN_GibbsSampler, MVN_FConditional, MVN_MCMC)

@@ -5,7 +5,7 @@ ipak <- function(pkg) {
   sapply(pkg, require, character.only = TRUE)
 }
 
-#调用
+#libraries
 packages <- c("mvtnorm","stats","plyr","Rfast","rgl")
 ipak(packages)
 
@@ -13,7 +13,7 @@ ipak(packages)
 # step.1
 head(dataset1)
 # step.2
-BP <- MND_BayesianPosterior(dataset1)
+BP <- MND_BayesianPosteriori(dataset1)
 # step.3
 BP_Gibbs <- MND_GibbsSampler(5000, BP)
 # step.4
@@ -27,7 +27,7 @@ result_Iter <- MND_BayesianIterator(dataset1,c(80,16,3))
 head(dataset2)
 dataset2_test <- dataset2[,1:4]
 # step.2
-MixBP <- MixMND_BayesianPosterior(dataset2_test,3)
+MixBP <- MixMND_BayesianPosteriori(dataset2_test,3)
 # step.3
 MixBP_Gibbs <- MixMND_GibbsSampler(8000, MixBP, random_method = "Fast")
 # step.4
