@@ -7,10 +7,10 @@
 a) Computing Bayesian posterior for (Mix)MVN distribution<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Using for:** *\*Bayesian posteriori in (Mix)MVN*,&nbsp;*\*Parameter estimation*
 
-b) Gibbs sampler for generating random vectors based on specified MVN<br/>
+b) Gibbs sampler for generating random vectors based on specified (Mix)MVN<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Using for:** *\*Marginal distributions in (Mix)MVN*
 
-c) Markov Chain Monte Carlo (MCMC) for approaching any customized conditional distribution based on specified MVN<br/>
+c) Markov Chain Monte Carlo (MCMC) for approaching any customized conditional distribution based on specified (Mix)MVN<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Using for:** *\*MCMC approach*,&nbsp;*\*Conditional distributions in (Mix)MVN*
 
 **Development Enviroment:**
