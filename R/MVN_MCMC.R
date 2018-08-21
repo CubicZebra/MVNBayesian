@@ -5,10 +5,6 @@ function(data, steps, pars, values, tol=0.3, ...){
   if(length(pars) != length(values) | length(pars) > length(data$mean)){
     stop("Error assignment: please confirm that pars and values have the identical and correct dimension  (be no more than that of input data). ")
   }
-  else if(length(pars) == 0){
-    MCMC <- cbind(MCMC, matrix(data = 0, samples_num, 1))
-    MCMC <- cbind(MCMC, matrix(data = 1, samples_num, 1))
-  }
   else{
     idx <- matrix(NA, samples_num, 2)
     for (i in 1:samples_num){
