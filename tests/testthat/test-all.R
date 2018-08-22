@@ -9,26 +9,28 @@ ipak <- function(pkg) {
 packages <- c("mvtnorm","stats","plyr","Rfast","rgl")
 ipak(packages)
 
-# Test for MND framework:
+# Test for MVN framework:
 # step.1
 head(dataset1)
 # step.2
-BP <- MND_BayesianPosteriori(dataset1)
+BP <- MVN_BayesianPosteriori(dataset1)
 # step.3
-BP_Gibbs <- MND_GibbsSampler(5000, BP)
+BP_Gibbs <- MVN_GibbsSampler(5000, BP)
 # step.4
-result_MND <- MND_MCMC(BP, 5000, c(1), c(76.53))
+result_MVN <- MVN_MCMC(BP, 5000, c(1), c(76.53))
 
-# Test for MND_BayesianIteratior:
-result_Iter <- MND_BayesianIterator(dataset1,c(80,16,3))
+# Test for MVN_BayesianIteratior:
+result_Iter <- MVN_BayesianIterator(dataset1,c(80,16,3))
 
-# Test for MixMND framework:
+# Test for MixMVN framework:
 # step.1
 head(dataset2)
 dataset2_test <- dataset2[,1:4]
 # step.2
-MixBP <- MixMND_BayesianPosteriori(dataset2_test,3)
+MixBP <- MixMVN_BayesianPosteriori(dataset2_test,3)
 # step.3
-MixBP_Gibbs <- MixMND_GibbsSampler(8000, MixBP, random_method = "Fast")
+MixBP_Gibbs <- MixMVN_GibbsSampler(8000, MixBP, random_method = "Fast")
 # step.4
-result_MixMND <- MixMND_MCMC(MixBP, 8000, c(1), c(1))
+result_MixMVN <- MixMVN_MCMC(MixBP, 8000, c(1), c(1))
+
+rm(list = ls())
