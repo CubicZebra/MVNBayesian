@@ -1,4 +1,9 @@
-# MVNBayesian Package
+MVNBayesian Package
+======
+[![CRAN Version](http://www.r-pkg.org/badges/version/MVNBayesian)](https://cran.r-project.org/package=MVNBayesian)
+[![Total RStudio Cloud Downloads](http://cranlogs.r-pkg.org/badges/grand-total/MVNBayesian?color=brightgreen)](https://cran.r-project.org/package=MVNBayesian)
+[![RStudio Cloud Downloads](http://cranlogs.r-pkg.org/badges/MVNBayesian?color=brightgreen)](https://cran.r-project.org/package=MVNBayesian)
+[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
 
 ## Bayesian analysis framework for multivariate normal (MVN) distribution and multivariate normal mixture (MixMVN) distribution
 
