@@ -15,7 +15,7 @@ Description: Tools of Bayesian analysis framework using the method
 Imports:
   mvtnorm, plyr, stats
 Suggests:
-  rgl
+  rgl, Rfast
 License: GPL-2
 URL: https://github.com/CubicZebra/MVNBayesian
 Encoding: UTF-8
