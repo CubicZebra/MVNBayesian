@@ -22,7 +22,7 @@ c) Markov Chain Monte Carlo (MCMC) for approaching any customized conditional di
 
 R_3.5.0; plyr_1.8.4; mvtnorm_1.0-8
 
-**Some other related functions are in experimental...**
+**Some other related functions (including EM clustering for MixMVN) are in experimental...**
 
 Author: ZHANG Chen<br/>
 Contact: 447974102@qq.com<br/>
