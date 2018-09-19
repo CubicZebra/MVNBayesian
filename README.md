@@ -1,5 +1,6 @@
 MVNBayesian Package
 ======
+[![](https://img.shields.io/badge/language-R-blue.svg)](https://www.r-project.org)
 [![CRAN Version](http://www.r-pkg.org/badges/version/MVNBayesian)](https://cran.r-project.org/package=MVNBayesian)
 [![Total RStudio Cloud Downloads](http://cranlogs.r-pkg.org/badges/grand-total/MVNBayesian?color=brightgreen)](https://cran.r-project.org/package=MVNBayesian)
 [![RStudio Cloud Downloads](http://cranlogs.r-pkg.org/badges/MVNBayesian?color=brightgreen)](https://cran.r-project.org/package=MVNBayesian)
